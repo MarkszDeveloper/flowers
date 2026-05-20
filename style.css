@@ -768,7 +768,7 @@ body {
   transform: scale(0.6) rotateX(60deg);
 }
 .long-g--2 .leaf, .long-g--3 .leaf {
-  -webkit-mask-image: linear-gradient(to top, transparent 50%, #079097 80%) !important;
+  -webkit-mask-image: linear-gradient(to top, transparent 50%, #079743 80%) !important;
 }
 .long-g--2 .leaf--1, .long-g--3 .leaf--1 {
   left: -1vmin;
@@ -985,4 +985,83 @@ body {
   animation-play-state: paused !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.flower--2 .flower__leaf {
+  background-color: #8b6f47;
+  background-image: linear-gradient(to top, #6b5437, #8b6f47);
+}
+.flower--2 .flower__leaf--4 {
+  background-image: linear-gradient(to top, #5a4629, #8b6f47);
+}
+
+.flower--2 .flower__light::after {
+  background-color: #a0826d;
+}
+
+.flower--3 .flower__leaf {
+  background-color: #e5ff00;
+  background-image: linear-gradient(to top, #daa520, #ffd700);
+}
+.flower--3 .flower__leaf--4 {
+  background-image: linear-gradient(to top, #b8860b, #ffd700);
+}
+
+.flower--3 .flower__light::after {
+  background-color: #ffed4e;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 5vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 100;
+  animation: fade-in-text 2s ease-in 4s both;
+}
+
+.name-lana {
+  font-size: 4vmin;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff69b4, #ffb6d9, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+  margin: 0 0 1.5vmin 0;
+  font-family: "Georgia", serif;
+  animation: float-animation 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.4));
+}
+
+.exclusive-text {
+  font-size: 1.5vmin;
+  color: #ffb6d9;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin: 0;
+  animation: fade-in-text 2s ease-in 4.5s both;
+  text-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+  font-family: "Georgia", serif;
+}
+
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes float-animation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}/*# sourceMappingURL=style.css.map */
